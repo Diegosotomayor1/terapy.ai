@@ -1,0 +1,101 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(var(--primary));
+        z-index: -1;
+        border-radius: 100%;
+        animation: floating 5s linear infinite;
+        animation-delay: 1.1s;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(var(--secondary));
+        z-index: -1;
+        border-radius: 100%;
+        animation: floating 5s linear infinite;
+        animation-delay: 0.5s;
+    }
+}
+
+.container-chat {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    height: calc(100dvh - 5rem);
+    overflow: hidden;
+    background-color: rgba(var(--background));
+    border-radius: 1rem;
+    padding: 4px;
+    margin: 10px;
+    box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.15);
+
+    .header-chat {
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        width: 100%;
+        border-radius: 0.8rem 0.8rem 0 0;
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: rgba(var(--primary));
+        z-index: 1;
+    }
+
+    .border-degrade-chat {
+        content: '';
+        position: absolute;
+        top: -15vh;
+        left: -25vh;
+        width: 120vh;
+        height: 120vh;
+        background: linear-gradient(rgba(var(--primary), 1) 0%, rgba(var(--primary), 0.8) 40%, rgba(var(--secondary), 0.1), rgba(var(--secondary), 0.8) 60%, rgba(var(--secondary), 1) 100%);
+        z-index: -1;
+        border-radius: 100%;
+        animation: spin 10s linear infinite;
+    }
+
+}
+
+app-layout-chat {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.separater {
+    width: 100%;
+    height: 4px;
+    background: rgba(var(--primary));
+    margin: 0;
+    padding: 0;
+}

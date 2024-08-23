@@ -1,27 +1,65 @@
-# TerapyAi
+# Therapy.ai
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+Therapy.ai es una plataforma de bienestar mental que utiliza inteligencia artificial avanzada para ofrecer terapia personalizada y gratuita. Con funcionalidades de voz, puedes hablar directamente con nuestro chatbot para recibir apoyo emocional, recomendaciones de hábitos diarios y ejercicios de mindfulness. Nuestra misión es ayudarte a mejorar tu salud mental de manera accesible y efectiva.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Interacción por Voz**: Habla directamente con el chatbot para una experiencia más natural.
+- **Recomendaciones de Hábitos Diarios**: Recibe recomendaciones personalizadas para mejorar tu bienestar mental.
+- **Ejercicios de Mindfulness y Meditación**: Accede a sesiones de meditación guiada y ejercicios de respiración.
+- **Seguimiento del Estado de Ánimo**: Lleva un diario de tu estado de ánimo y emociones.
+- **Técnicas de Terapia Cognitivo-Conductual (TCC)**: Realiza ejercicios de TCC personalizados.
+- **Recursos Educativos**: Accede a artículos, videos y otros recursos sobre salud mental.
+- **Gamificación y Engagement**: Participa en desafíos y retos para mantenerte comprometido.
+- **Privacidad y Seguridad**: Todos los datos están encriptados y protegidos.
 
-## Code scaffolding
+## Tecnologías Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Frontend**: Angular
+- **Inteligencia Artificial**: GPT-4 Mini
+- **Reconocimiento y Síntesis de Voz**: [Nombre de la tecnología de voz utilizada]
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Requisitos
 
-## Running unit tests
+- Node.js (v14 o superior)
+- Angular CLI (v12 o superior)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Pasos
 
-## Running end-to-end tests
+1. **Clonar el Repositorio**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   git clone https://github.com/tu-usuario/therapy-ai.git
+   cd therapy-ai
 
-## Further help
+2. **Instalar Dependencias**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```
+   npm install
+   ```
+
+3. **Configurar GPT-4 Mini**
+
+   - Asegúrate de tener acceso a GPT-4 Mini y configura las credenciales necesarias en el archivo de configuración.
+
+4. **Ejecutar la Aplicación**
+
+   ```
+   ng serve
+   ```
+
+5. **Acceder a la Aplicación**
+
+   - [Abre tu navegador y ](http://localhost:4200)visita `http://localhost:4200` para ver la aplicación en funcionamiento.
+
+## **Contribución**
+
+¡Nos encantaría que contribuyeras a [Therapy.ai](http://Therapy.ai)! Aquí tienes algunas formas en las que puedes hacerlo:
+
+- **Reportar Problemas**: Si encuentras algún problema, por favor abre un issue en GitHub.
+- **Enviar Pull Requests**: Si tienes alguna mejora o corrección, envía un[ pull request.](http://request.Feedback)
+- **Feedback**: Nos encantaría recibir tu feedback para mejorar la plataforma.
+
+# 

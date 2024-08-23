@@ -1,0 +1,37 @@
+.message-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message-chat {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    min-width: 100px;
+    max-width: 350px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    & .date {
+        font-size: 0.7rem;
+        text-align: right;
+    }
+}
+
+.sent {
+    align-items: end;
+
+    & .message-chat {
+        background-color: rgb(var(--primary), 0.2);
+    }
+}
+
+.received {
+    align-items: start;
+
+    & .message-chat {
+        background-color: rgb(var(--secondary), 0.2);
+    }
+}
