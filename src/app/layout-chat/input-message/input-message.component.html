@@ -1,8 +1,19 @@
-<mat-form-field class="input-message" [appearance]="'outline'" [floatLabel]="'always'" [className]="'input-message'">
-    <mat-label>Write a message</mat-label>
-    <textarea matInput type="text" (input)="inputChange($event)" name="message" autocomplete="off"
-        aria-expanded="false"></textarea>
-    <button mat-button class="button">
-        <lucide-icon name="send" />
-    </button>
+<mat-form-field
+  class="input-message"
+  [appearance]="'outline'"
+  [floatLabel]="'always'"
+  [className]="'input-message'"
+>
+  <mat-label>Write a message</mat-label>
+  <textarea
+    matInput
+    type="text"
+    (input)="inputChange($event)"
+    name="message"
+    autocomplete="off"
+    aria-expanded="false"
+  ></textarea>
+  <button mat-button class="button">
+    <lucide-icon name="send" />
+  </button>
 </mat-form-field>

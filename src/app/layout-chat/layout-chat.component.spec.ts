@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { LayoutChatComponent } from './layout-chat.component';
+import { LayoutChatComponent } from './layout-chat.component'
 
 describe('LayoutChatComponent', () => {
-  let component: LayoutChatComponent;
-  let fixture: ComponentFixture<LayoutChatComponent>;
+  let component: LayoutChatComponent
+  let fixture: ComponentFixture<LayoutChatComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LayoutChatComponent]
-    })
-    .compileComponents();
+      imports: [LayoutChatComponent],
+    }).compileComponents()
 
-    fixture = TestBed.createComponent(LayoutChatComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(LayoutChatComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

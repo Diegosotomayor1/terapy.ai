@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LayoutChatComponent } from "./layout-chat/layout-chat.component";
+import { Component } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
+import { LayoutChatComponent } from './layout-chat/layout-chat.component'
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,6 @@ import { LayoutChatComponent } from "./layout-chat/layout-chat.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-
 export class AppComponent {
-  title = 'Terapy.ai';
+  title = 'Terapy.ai'
 }

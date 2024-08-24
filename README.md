@@ -63,4 +63,4 @@ Therapy.ai es una plataforma de bienestar mental que utiliza inteligencia artifi
 - **Enviar Pull Requests**: Si tienes alguna mejora o corrección, envía un[ pull request.](http://request.Feedback)
 - **Feedback**: Nos encantaría recibir tu feedback para mejorar la plataforma.
 
-# 
+#
