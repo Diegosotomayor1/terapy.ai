@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output, signal } from '@angular/core';
 import { InputMessageComponent } from './input-message/input-message.component';
 import { MessageComponent } from './message/message.component';
+import { openaiService } from '../../utils/service/openai';
 
 export type messageType = {
   message: string;
@@ -36,7 +37,7 @@ export class LayoutChatComponent {
     this.message.set(message)
   }
 
-  submitMessage($event: Event) {
+  async submitMessage($event: Event) {
     $event.preventDefault();
     const target = $event.target as HTMLFormElement;
     const message = this.message();
@@ -47,6 +48,15 @@ export class LayoutChatComponent {
         type: 'sent'
       }]
     )
+    const response = await openaiService.getCompletion(message)
+    console.log(response)
+      this.messages.update(
+        (prev) => [...prev, {
+          message: response ?? '',
+          date: new Date(),
+          type: 'received'
+        }]
+      )
     target.reset()
   }
 
