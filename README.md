@@ -1,4 +1,4 @@
-# Therapy.ai
+# [Therapy.ai](http://Therapy.ai)
 
 Therapy.ai es una plataforma de bienestar mental que utiliza inteligencia artificial avanzada para ofrecer terapia personalizada y gratuita. Con funcionalidades de voz, puedes hablar directamente con nuestro chatbot para recibir apoyo emocional, recomendaciones de hábitos diarios y ejercicios de mindfulness. Nuestra misión es ayudarte a mejorar tu salud mental de manera accesible y efectiva.
 
@@ -17,7 +17,7 @@ Therapy.ai es una plataforma de bienestar mental que utiliza inteligencia artifi
 
 - **Frontend**: Angular
 - **Inteligencia Artificial**: GPT-4 Mini
-- **Reconocimiento y Síntesis de Voz**: [Nombre de la tecnología de voz utilizada]
+- **Reconocimiento y Síntesis de Voz**: \[Nombre de la tecnología de voz utilizada\]
 
 ## Instalación
 
@@ -33,24 +33,25 @@ Therapy.ai es una plataforma de bienestar mental que utiliza inteligencia artifi
    ```bash
    git clone https://github.com/tu-usuario/therapy-ai.git
    cd therapy-ai
+   ```
 
-2. **Instalar Dependencias**
+   **Instalar Dependencias**
 
    ```
    npm install
    ```
 
-3. **Configurar GPT-4 Mini**
+2. **Configurar GPT-4 Mini**
 
    - Asegúrate de tener acceso a GPT-4 Mini y configura las credenciales necesarias en el archivo de configuración.
 
-4. **Ejecutar la Aplicación**
+3. **Ejecutar la Aplicación**
 
    ```
    ng serve
    ```
 
-5. **Acceder a la Aplicación**
+4. **Acceder a la Aplicación**
 
    - [Abre tu navegador y ](http://localhost:4200)visita `http://localhost:4200` para ver la aplicación en funcionamiento.
 

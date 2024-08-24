@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Output, signal } from '@angular/core';
 import { InputMessageComponent } from './input-message/input-message.component';
 import { MessageComponent } from './message/message.component';
 
@@ -18,12 +18,12 @@ export type messageType = {
 })
 
 export class LayoutChatComponent {
-  message: string = '';
-  messages: messageType[] = [{
+  message = signal<string>('');
+  messages = signal<messageType[]>([{
     message: '¡Hola! 👋 Soy tu terapeuta 24/7, aquí para escucharte siempre. 🤖💙 ¿En qué puedo ayudarte hoy?',
     date: new Date(),
     type: 'received'
-  }];
+  }]);
   messageParsed = (message: messageType) => ({
      message: message.message,
      date: Intl.DateTimeFormat('es-ES', { hour: 'numeric', minute: 'numeric' }).format(message.date),
@@ -33,13 +33,20 @@ export class LayoutChatComponent {
   @Output() messageChangeEvent = new EventEmitter <string>();
 
   inputChange(message: string) {
-    this.message = message
+    this.message.set(message)
   }
 
   submitMessage($event: Event) {
     $event.preventDefault();
-    const target = $event.target as HTMLFormElement
-    this.messages.push({ message: this.message, date: new Date(), type: 'sent' });
+    const target = $event.target as HTMLFormElement;
+    const message = this.message();
+    this.messages.update(
+      (messages) => [...messages, {
+        message: message,
+        date: new Date(),
+        type: 'sent'
+      }]
+    )
     target.reset()
   }
 
