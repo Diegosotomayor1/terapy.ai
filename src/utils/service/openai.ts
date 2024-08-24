@@ -5,20 +5,12 @@ const ai = new openai({
 });
 
 
-const openaiService = {
+export const openaiService = {
     getCompletion: async (prompt: string) => {
         const response = await ai.chat.completions.create({
             model: "gpt-4o-mini",
             messages: [{ role: "user", content: prompt }],
         });
         return response.choices[0].message?.content
-    },
-    getObjectCompletion: async (prompt: string) => {
-        const response = await ai.chat.completions.create({
-            model: "gpt-4o-mini",
-            messages: [{ role: "user", content: prompt }],
-        });
-        return response
     }
-
 }
