@@ -2,8 +2,9 @@
   <div class="messages">
     @if (messages.length === 0) {}
     @for (message of messages(); track $index) {
-      <app-message [message]="messageParsed(message)" />
+    <app-message [message]="messageParsed(message)" />
     }
+    <div class="message-most-recent"></div>
   </div>
   <form action="" (submit)="submitMessage($event)">
     <app-input-message (messageChangeEvent)="inputChange($event)" />

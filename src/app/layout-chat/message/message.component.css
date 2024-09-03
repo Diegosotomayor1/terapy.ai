@@ -20,7 +20,7 @@
   }
 }
 
-.sent {
+.user {
   align-items: end;
 
   & .message-chat {
@@ -28,7 +28,7 @@
   }
 }
 
-.received {
+.assistant {
   align-items: start;
 
   & .message-chat {
