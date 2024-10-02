@@ -1,9 +1,8 @@
 import openai from 'openai'
-import { environment } from '../../environments/environment.development'
 import { messageType } from '../../app/layout-chat/layout-chat.component'
 
 const ai = new openai({
-  apiKey: environment.openAiApiKey,
+  apiKey: process.env['OPEN_AI_API_KEY'],
   dangerouslyAllowBrowser: true,
 })
 
