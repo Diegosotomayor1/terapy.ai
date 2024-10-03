@@ -2,6 +2,9 @@
 
 Therapy.ai es una plataforma de bienestar mental que utiliza inteligencia artificial avanzada para ofrecer terapia personalizada y gratuita. Con funcionalidades de voz, puedes hablar directamente con nuestro chatbot para recibir apoyo emocional, recomendaciones de hábitos diarios y ejercicios de mindfulness. Nuestra misión es ayudarte a mejorar tu salud mental de manera accesible y efectiva.
 
+![image](https://github.com/user-attachments/assets/4d755c92-ff08-4e4a-ae55-fde592dfe9a6)
+
+
 ## Características
 
 - **Interacción por Voz**: Habla directamente con el chatbot para una experiencia más natural.
